@@ -1,0 +1,53 @@
+.head {
+  width: 100%;
+}
+.head .logo {
+  width: 30%;
+}
+
+/* Texte défilant */
+#textdefile {
+  display: block;
+  margin: 40px auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  max-width: 640px;
+  height: 60px;
+}
+ 
+#textdefile div {
+margin: 0;
+  min-width: 100%; /* au minimum la largeur du conteneur */
+}
+ 
+#textdefile div span, 
+#textdefile div:after {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  white-space: nowrap;
+  top:0;
+}
+ 
+#textdefile div span {
+  animation: defilement 10s infinite linear;
+}
+ 
+#textdefile div:after {
+  position: absolute;
+  content:attr(data-text);
+  top:0; left:0;
+  animation: defilement2 10s infinite linear;
+}
+ 
+@keyframes defilement {
+  0% { margin-left: 0; }
+  100% { margin-left: -100%; }
+}
+ 
+@keyframes defilement2 {
+  0% { margin-left: 100%; }
+  100% { margin-left: 0%; }
+}
