@@ -28,13 +28,15 @@ a:hover{
     justify-content: space-around;
 }
 
-#clock{
-    color:#A9A9A9;
-    width: 14%;
-    font-size: 170%;
-    text-align: center ;
-    margin-left: 80%;
-    margin-top: -20%;
+.compItems li{
+    display: inline-block;
+    padding: 0 1em;
+    margin: 5px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #fff;
+    background: #EE4437;
 }
 .banner{
     margin-top: 0px;
