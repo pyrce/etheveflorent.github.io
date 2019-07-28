@@ -226,13 +226,28 @@ figure{
     visibility: hidden;
 }
 .modal-content{
+    width:1020px;
+    height:450px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+.modal-content div{
+    height: 100%;
+}
 .modal-content h4{
     font-weight: bold;
     text-decoration: underline;
+}
+.modal-content .is-5:nth-of-type(2){
+    background-color: #efeae4;
+    width: 60%;
+}
+.taches{
+    margin-top: 5px;
+    font-family: "Open Sans";
+   
 }
 .is-active{
     visibility: visible;
