@@ -14,21 +14,62 @@
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
 
     <div class="container-fluid columns" id="banner">
         <div class="column is-1 banner">
             <img src="img/poisson.jpg" class="logo image is-64x64" alt="poisson" />
         </div>
-        <nav class="column is-offset-4 is-7 banner" style="margin-top:12px;">
-            <ul>
-                <li><a href="#" aria-labeledby="accueil">Accueil</a></li>
-                <li><a href="#apropos" aria-labeledby="apropos">A propos</a></li>
-                <li><a href="#competences" aria-labeledby="competence">Compétences</a></li>
-                <li><a href="#diplomes" aria-labeledby="diplôme">Diplômes</a></li>
-                <li><a href="#contact" aria-labeledby="contact">Contact</a></li>
+        <nav class="column is-offset-4 is-7 banner" role="navigation" style="margin-top:12px;">
+<div id="menuToggle">
+
+    
+            <ul id="menu">
+               <a href="#" aria-labeledby="accueil">
+                    <li>
+                <span class="icon-text">
+                    <span class="icon">
+                      <i class="fas fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                  </span>
+            </li>
+            </a>
+                <a href="#apropos" aria-labeledby="apropos">
+                    <li>  
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-regular fa-magnifying-glass"></i>
+                            </span>
+                            <span>A propos</span>
+                          </span>
+                    </li>
+                </a>
+               <a href="#competences" aria-labeledby="competence">
+                    <li>
+                        
+                        <span class="icon-text">
+                            <span class="icon">
+                              <i class="fas fa-home"></i>
+                            </span>
+                            <span>Compétences</span>
+                          </span>
+                    
+                    </li>
+                </a>
+                <a href="#diplomes" aria-labeledby="diplôme">
+                    <li>
+                        
+                        <span class="icon-text">
+                            <span class="icon">
+                              <i class="fas fa-home"></i>
+                            </span>
+                            <span>Diplômes</span>
+                          </span>
+                    </li></a>
+              
             </ul>
+ </div>
         </nav>
 
         <!--div class="column is-offset-4 is-7 banner" style="margin-top:12px;">
@@ -61,25 +102,24 @@
     </div>
     <div class="apropos " id="apropos">
         <div class="titre">A propos</div>
-        <div class=" is-5">
-            Agé de 31 ans, passioné de technologie web, je suis actuellement en formation à Simplon <br>
-            <a class="button is-link" href="img/cv.pdf" target="_blank">Télécharger mon cv</a>
+        <div class="ma-5 is-5">
+            Agé de 32 ans, passioné de technologie web, je suis actuellement en formation à Simplon <br>
+            <a class="button is-link" href="img/CV_mai_2022.pdf" target="_blank">Télécharger mon cv</a>
         </div>
     </div>
 
     <div class="competences" id="competences">
-        <div class="titre is-offset-8">Compétences</div>
+        <div class="titre is-offset-8"> Compétences</div>
         <div class="content">
 
             <section class="columns is-9 is-mobile">
                 <div class="column is-5">
-                    <h4>WEB</h4>
+                    <h4>Langages</h4>
 
                     <ul class="compItems">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
-                        <li>JQUERY</li>
                         <li>PHP</li>
                         <li>MYSQL</li>
                         <li>XML</li>
@@ -106,8 +146,12 @@
                         <li>SASS</li>
                         <li>Bulma</li>
                         <li>Boostrap</li>
+                        <li>Reactjs</li>
+                        <li>React-native</li>
+                        <li>electronjs</li>
                         <li>Vuejs</li>
                         <li>Laravel</li>
+                        <li>Nodejs</li>
                     </ul>
                 </div>
 
@@ -122,7 +166,11 @@
                         <li>Git</li>
                         <li>Github</li>
                         <li>Visual Studio Code</li>
+                        <li>Visual studio</li>
+                        <li>Android studio</li>
                         <li>Heroku</li>
+                        <li>lucid chart</li>
+                        <li>Figma</li>
                         <li>Mysql Workbench</li>
                     </ul>
                 </div>
@@ -140,7 +188,42 @@
         <div class="titre">Formations</div>
         <div class="content">
 
+            <section class="columns is-8 ">
+   
+                <div class="column is-offset-6">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="column is-4">
+                    <h4>2020-2022</h4>
+                    <span> Alternance concepteur développeur d'applications ( Simplon Réunion) </span> 
+                    Certifications obtenues :
+                    <ul>
+                        <li>Cybersécurité : SURVEILLER UN SYSTÈME D’INFORMATION SUR DES CRITÈRES DE SÉCURITÉ INFORMATIQUE</li>
 
+                    </ul>
+                    <a href="img/cybersecurite.pdf" target="_blank">Voir la certification cybersecurite</a> <br>
+                </div>
+            </section>
+
+
+            <section class="columns is-8 ">
+                <div class="column is-5 ">
+                    <h4>09/2019-09/2020</h4>
+                    <span> Développeur web et web mobile  ( Simplon Réunion)</span>
+                    <br>
+                   Formation en contrat de profesionalisation developpeur web et web mobile à Simplon <br>
+                    Titre professionnel obtenu :
+                    <ul>
+                        <li>developpeur web et web mobile</li>
+                    </ul>
+
+                    <a href="img/VUL1NK.pdf" target="_blank">Voir le titre </a> <br>
+                </div>
+
+                <div class="column is-offset-1">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </section>
             
 
             <section class="columns is-8 ">
@@ -157,6 +240,7 @@
                         <li>OPQUAST : Maîtrise de la qualité en projet web, obtenu le score de 815 points sur 1000</li>
                         <li>Méthodes agiles de gestion et amorçage de projet</li>
                         <li>Coder et déployer une application web simple n°2077 du RNCP </li>
+                        <li>Mise a jour effectué  le septembre 2020, obtenue le score de 31 points sur 40</li>
                     </ul>
 
                     <a href="img/VUL1NK.pdf" target="_blank">Voir la certification OPQUAST</a> <br>
@@ -221,6 +305,47 @@
 
             <section class="is-10 is-mobile">
 
+
+                
+                <article class="exp is-10">
+                    <aside class=" is-2">09/2020-04/2022</aside>
+
+                    <div class="column expdetail is-9 is-offset-1">
+
+                        <header class="column">Concepteur développeur</header>
+                        <div class="is-2">
+                            Exodata à Saint-Denis <br/>
+                            Missions : </br>
+                            <ul style="margin-top:0">
+                                <li>Développer des fonctionalités pour une nouvelle application pour une compagnie d'assurance</li>
+                                <li>Ajouter des foncionnalités</li>
+                                <li>Débugger les foncionnalités</li>
+                            </ul>
+                 
+                            Langages utilisés : PHP, HTML,Javascript, CSS, Booststrap
+                        </div>
+                    </div>
+                </article>
+
+                <article class="exp is-10">
+                    <aside class=" is-2">09/2019-09/2020</aside>
+
+                    <div class="column expdetail is-9 is-offset-1">
+
+                        <header class="column">Dévellopeur web et web mobile</header>
+                        <div class="is-2">
+                            Exodata à Saint-Denis <br/>
+                            Missions : </br>
+                            <ul style="margin-top:0">
+                                <li>Développer la page utilisateur expert pour une compagnie d'assurance</li>
+                                <li>Ajouter des foncionnalités</li>
+                                <li>Débugger les foncionnalités</li>
+                            </ul>
+                 
+                            Langages utilisés : PHP, HTML,Javascript, CSS, Booststrap
+                        </div>
+                    </div>
+                </article>
 
                 <article class="exp is-10">
                     <aside class=" is-2">06/2019</aside>
@@ -398,58 +523,95 @@
 
     <div id="portfolio">
         <h2 class="titre is-offset-8">Portfolio</h2>
-        <div id="exemples" style="background-color: cornflowerblue;width:100%;">
-            <!--     vuejs         -->
+        <div id="exemples" style="background-color: rgba(250,99,87,0.30);width:100%;">
+
+
             <div class="column is-3">
-                <img src="img/todolist.png" alt="sass" /><br>
-                <span>Todolist en Vuejs</span>
+                <img src="img/mielpei.JPG" alt="sass" /> <br>
+                <span>Projet de certification CDA</span>
                 <div style="visibility:hidden" class="contenue">
 
-                    <div class="column is-5">
-                        <img src="img/todolist.png" alt="site webcup" />
+                    <div class="column ">
+                        <img src="img/mielpei.JPG" alt="projet certification CDA" />
                     </div>
-                    <div class="column is-5">
+                    <div class="column ">
                         <h4>Site</h4>
-                        <a href="https://pyrce.github.io/todolist" target="_blank">Voir le site</a> <br>
+                        <a href="https://mielpei.herokuapp.com">Voir le site</a> <br>
                         <h4>Outils utilisés</h4>
-                        <p>Visual Studio Code, framework css bulma</p> <br>
+                        <p>Visual Studio Code, Heroku,trello,lucid chart</p> <br>
                         <h4>Description</h4>
                         <p>
-                            A l'occasion de l'apprenntissange du framework vuejs, j'ai réalisé cette todolist
+                            Ce projet s'inscrit dans le cadre de la formation
+                            de concepteur développeur à Simplon Réunion. Ce projet est un site permettant la mise en relation
+                            des producteurs de miel et les réunionais <br>
+         
+                            <h4> Mes missions:</h4>
+                            <ul class="taches">
+                                <li>Création d'un Trello pour l'organisation du projet en méthode Agile</li>
+                                <li>Mise en place d'un dépot GIT</li>
+                                <li>Mise en ligne sur le site d'hébergement Heroku</li>
+                                <li>Développement de l'interface administrative pour la gestion des utilisateurs et des
+                                    évènements </li>
+                                <li>Création de la base de données mysql sur Heroku</li>
+                                <li>langages utilisés: laravel, boostrap</li>
+
+                            </ul>
                         </p>
                     </div>
+
                 </div>
             </div>
-            <!--     bulma         -->
+
+
+
             <div class="column is-3">
-                <img src="img/bulma.jpg" alt="sass" /><br>
-                <span>Page d'accueil en Bulma</span>
+                <img src="img/projet_cda.JPG" alt="sass" /> <br>
+                <span>Projet de certification CDA</span>
                 <div style="visibility:hidden" class="contenue">
-                    <div class="column is-5">
-                        <img src="img/bulma.jpg" alt="projet bulma" />
+
+                    <div class="column ">
+                        <img src="img/projet_cda.JPG" alt="projet certif" />
                     </div>
-                    <div class="column is-5">
+                    <div class="column ">
                         <h4>Site</h4>
-                        <a href="http://pyrce.github.io/site_bulma" target="_blank">Voir le site</a> <br>
+                        <a href="http://projet-fdjr.herokuapp.com">Voir le site</a> <br>
                         <h4>Outils utilisés</h4>
-                        <p>Visual Studio Code, bulma</p> <br>
+                        <p>Visual Studio Code, Heroku,trello,lucid chart</p> <br>
                         <h4>Description</h4>
                         <p>
-                            Lors de l'apprentissage d'un framework css, j'ai pu créer ce site comme exemple
+                            Ce projet s'inscrit dans le cadre de la certification de fin de formation
+                            de concepteur développeur à Simplon Réunion. Ce projet est un site permettant la gestion
+                            des évènements. <br>
+          
+                            <h4> Mes missions:</h4>
+                            <ul class="taches">
+                                <li>Création d'un Trello pour l'organisation du projet en méthode Agile</li>
+                                <li>Mise en place d'un dépot GIT</li>
+                                <li>Mise en ligne sur le site d'hébergement Heroku</li>
+                                <li>Développement de l'interface administrative pour la gestion des utilisateurs et des
+                                    évènements </li>
+                                <li>Création de la base de données mysql sur Heroku</li>
+                                <li>langages utilisés: Nodejs, Tailwind, CSS3,vuejs</li>
+
+                            </ul>
                         </p>
                     </div>
+
                 </div>
             </div>
+
+
+
             <!--     certif         -->
             <div class="column is-3">
                 <img src="img/certif.PNG" alt="sass" /> <br>
-                <p>Projet de certification</p>
+                <span>Projet de certification</span>
                 <div style="visibility:hidden" class="contenue">
 
-                    <div class="column is-5">
+                    <div class="column ">
                         <img src="img/certif.PNG" alt="projet certif" />
                     </div>
-                    <div class="column is-5">
+                    <div class="column ">
                         <h4>Site</h4>
                         <a href="http://projet-fdjr.herokuapp.com">Voir le site</a> <br>
                         <h4>Outils utilisés</h4>
@@ -483,10 +645,10 @@
                 <span>Projet ITAC pour l'entreprise SEYES</span>
                 <div style="visibility:hidden" class="contenue">
 
-                    <div class="column is-5">
+                    <div class="column ">
                         <img src="img/projet-itac.png" alt="projet certif" />
                     </div>
-                    <div class="column is-5">
+                    <div class="column ">
                         <h4>Site</h4>
                         <a href="http://itac-projet.herokuapp.com">Voir le site</a> <br>
                         <h4>Outils utilisés</h4>
@@ -513,11 +675,11 @@
                 <span>Webcup 2019</span>
                 <div style="visibility:hidden" class="contenue">
 
-                    <div class="column is-5">
+                    <div class="column">
                         <img src="img/webcup.png" alt="site webcup" />
                         <img src="img/pandastique.png" alt="logo equipe webcup" class="image is-128x128" />
                     </div>
-                    <div class="column is-5">
+                    <div class="column">
                         <h4>Site</h4>
                         <a href="http://humans-united.herokuapp.com">Voir le site</a> <br>
                         <h4>Outils utilisés</h4>
@@ -535,20 +697,53 @@
                                 <li>Mise en ligne sur le site d'hébergement Heroku</li>
                                 <li>Création de contenu </li>
                                 <li>Responsive design</li>
-                                <li>outils et langages utilisés: Laravel, Boostrap,HTML,CSS3,Github, trello,Heroku</li>
+                                <li>Outils et langages utilisés: Laravel, Boostrap,HTML,CSS3,Github, trello,Heroku</li>
                             </ul>
 
                         </p>
                     </div>
                 </div>
             </div>
+
+            <!--     jewcloth         -->
+            <div class="column is-3">
+                <img src="img/jewlcloth.PNG" alt="site webcup" /><br>
+                <span>jewlcloth</span>
+                <div style="visibility:hidden" class="contenue">
+
+                    <div class="column">
+                        <img src="img/jewlcloth.png" alt="jewlcloth" />
+                    </div>
+                    <div class="column ">
+                        <h4>Site</h4>
+                        <a href="http://jewlcloth.herokuapp.com/">Voir le site</a> <br>
+                        <h4>Outils utilisés</h4>
+                        <p>Visual Studio Code, Heroku, Boostrap, Nodejs, Mockflow</p> <br>
+                        <h4>Description</h4>
+                        <p>
+                            Site ecommerce de vêtements et de bijoux <br>
+                            <h4> Mes missions:</h4>
+                            <ul class="taches">
+                                <li>Création d'un Trello pour l'organisation du projet en méthode Agile</li>
+                                <li>Mise en place d'un dépot git pour le travail d'équipe</li>
+                                <li>Mise en ligne sur le site d'hébergement Heroku</li>
+                                <li>Création de contenu </li>
+                                <li>Responsive design</li>
+                                <li>Outils et langages utilisés: Nodejs, Boostrap,HTML,CSS3,Github, trello,Heroku</li>
+                            </ul>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <!--
                 fenêtre modale afin d'afficher les images en grand
             -->
-    <div class="container" id="app"></div>
+
     <div class="modal column is-8 is-offset-2">
 
         <div class="modal-background" style="background-color: white"> <button class="modal-close"></button></div>
@@ -561,7 +756,7 @@
     </div>
 
 
-    <div id="contact" id="contact">
+    <!--div id="contact" id="contact">
         <form method="POST">
             <label for="nom">Nom</label><input type="text" id="nom" title="nom" aria-label="Nom"
                 aria-labelledby="Votre nom" /><br>
@@ -570,9 +765,11 @@
             <textarea id="objet" title="objet" aria-label="Avis">
         </textarea>
         </form>
-    </div>
-    <script src="js/script.js"></script>
-
+    </div-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/e2a4bb1024.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>   
 </body>
 
 </html>
