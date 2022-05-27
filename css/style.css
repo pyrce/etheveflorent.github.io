@@ -54,7 +54,9 @@ a:hover::after {
 }
 #apropos{
     background-color: rgba(94,250,216);
-    height: 20%;
+
+    font-size: 1.3em;
+    font-family: "Oswald";
 }
 .compItems li{
     display: inline-block;
@@ -148,6 +150,9 @@ margin-right: 50px;
     transform: scale(0.9);
 }
 
+.content section{
+    border-radius: 10px;
+}
 textarea {
     width: 300px;
     height: 300px;
