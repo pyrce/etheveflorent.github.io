@@ -11,7 +11,7 @@ $("#exemples img").click(function() {
   });
 
   $("#cv").click(function() {
-
+console.log("mon cv")
     $(".modal").addClass("is-active");  
 
     var cont=$(this).nextAll(".contenue").html();
