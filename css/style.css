@@ -202,7 +202,8 @@ section:nth-of-type(odd){
 background-color:#AD7A23;
 border-radius: 10px;
 color:white;
-
+width: 15%;
+text-align: center;
 font-size: 18px;
 height: 50px;
 
