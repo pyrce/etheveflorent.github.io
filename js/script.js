@@ -9,6 +9,17 @@ $("#exemples img").click(function() {
 
 
   });
+
+  $("#cv").click(function() {
+
+    $(".modal").addClass("is-active");  
+
+    var cont=$(this).nextAll(".contenue").html();
+  
+    $(".modal-content").html(cont) ;
+    $(".modal-content").css("display","block")
+
+  });
   
   $(".modal-close").click(function() {
      $(".modal").removeClass("is-active");
