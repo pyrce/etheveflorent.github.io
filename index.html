@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
@@ -21,6 +21,7 @@
             <img src="img/poisson.jpg" class="logo image is-64x64" alt="poisson" />
         </div>
         <nav class="column is-offset-4 is-7 banner" role="navigation" style="margin-top:12px;">
+
 <div id="menuToggle">
 
     
@@ -35,7 +36,7 @@
                   </span>
             </li>
             </a>
-                <a href="#apropos" aria-labeledby="apropos">
+                <a href="#me" aria-labeledby="apropos">
                     <li>  
                         <span class="icon-text">
                             <span class="icon">
@@ -45,7 +46,7 @@
                           </span>
                     </li>
                 </a>
-               <a href="#competences" aria-labeledby="competence">
+               <a href="#comps" aria-labeledby="competence">
                     <li>
                         
                         <span class="icon-text">
@@ -67,7 +68,16 @@
                             <span>Diplômes</span>
                           </span>
                     </li></a>
-              
+                    <a href="#portfolio" aria-labeledby="portfilio">
+                        <li>
+                            
+                            <span class="icon-text">
+                                <span class="icon">
+                                  <i class="fas fa-home"></i>
+                                </span>
+                                <span>Portfilio</span>
+                              </span>
+                        </li></a>
             </ul>
  </div>
         </nav>
@@ -84,22 +94,21 @@
     </div>
 
 
-
     <div class="header">
         <div class="nom">
-            Bienvenue</br>
+            <span>Bienvenue</span>
 
-            ETHEVE Florent
+            <span> ETHEVE Florent</span>
         </div>
-        <div id="clock">
-
-        </div>
+ 
     </div>
+    <span id="me"></span>
     <div id="textdefile">
-        <div data-text="Developpeur web">
+        <div data-text="Developpeur web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  agile">
             <span>Developeur web</span>
         </div>
     </div>
+    <span id="comps"></span>
     <div class="apropos " id="apropos">
         <div class="titre">A propos</div>
         <div class=" is-5">
@@ -112,7 +121,7 @@
             Je suis particulièrement intéressé par le développement en langage Javascript et ses frameworks
             <br>
 
-            <a class="button is-link" href="img/CDA.pdf" target="_blank">Télécharger mon cv</a>
+            <a class="button is-link" href="img/CV2023.pdf" target="_blank">Télécharger mon cv</a>
 
         </div>
     </div>
@@ -212,9 +221,10 @@
                     </ul>
                     Titre professionnel obtenu :
                     <ul>
-                        <li>Concepteur développeur d'application</li>
+                        <li> <a href="img/certifcda.pdf" type="application/pdf" target="_blank">Concepteur développeur d'application</a></li>
                     </ul>
-                    <a href="img/cybersecurite.pdf" type="application/pdf" target="_blank">Voir la certification cybersecurite</a> <br>
+                   <br>
+                    <a href="img/cybersecurite.pdf" type="application/pdf" target="_blank">Voir la certification cybersecurite</a> 
                 </div>
             </section>
 
@@ -314,25 +324,25 @@
     </div>
     <div id="experiences">
         <div class="titre is-offset-8">Experiences Professionnelles</div>
-        <div class="content is-10">
+        <div class="content fixed-grid has-1-cols ">
 
-            <section class="is-10 is-mobile">
-
+            <div class="grid  is-mobile ">
 
                 
-                <article class="exp is-10">
-                    <aside class=" is-2">09/2020-04/2022</aside>
+                <article class="exp cell is-10">
+                    <aside class=" is-3 column">09/2020-04/2022</aside>
 
-                    <div class="column expdetail is-9 is-offset-1">
+                    <div class="column expdetail is-8 is-offset-1">
 
                         <header class="column">Concepteur développeur</header>
                         <div class="is-2">
                             Exodata à Saint-Denis <br/>
                             Missions : </br>
                             <ul style="margin-top:0">
-                                <li>Développer des fonctionalités pour une nouvelle application pour une compagnie d'assurance</li>
-                                <li>Ajouter des foncionnalités</li>
-                                <li>Débugger les foncionnalités</li>
+                                <li>Développement d’interfaces web, front et back.</li>
+                                <li>Correction des erreurs sur les lignes de code</li>
+                                <li>Améliorations des solutions existantes en s’appuyant sur une analyse et en recueillant les retours opérationnels.</li>
+                                <li>Reporting d’activité auprès du responsable, point sur le travail effectué, signalement des problèmes techniques rencontrés et des solutions apportées</li>
                             </ul>
                  
                             Langages utilisés : PHP, HTML,Javascript, CSS, Booststrap
@@ -340,8 +350,8 @@
                     </div>
                 </article>
 
-                <article class="exp is-10">
-                    <aside class=" is-2">09/2019-09/2020</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">09/2019-09/2020</aside>
 
                     <div class="column expdetail is-9 is-offset-1">
 
@@ -350,9 +360,9 @@
                             Exodata à Saint-Denis <br/>
                             Missions : </br>
                             <ul style="margin-top:0">
-                                <li>Développer la page utilisateur expert pour une compagnie d'assurance</li>
-                                <li>Ajouter des foncionnalités</li>
-                                <li>Débugger les foncionnalités</li>
+                                <li>Développer la page utilisateur expert pour un groupe d’assurance</li>
+                                <li>Ajouter de nouvelles fonctionnalités</li>
+                                <li>Correctif des bugs et amélioration des applications</li>
                             </ul>
                  
                             Langages utilisés : PHP, HTML,Javascript, CSS, Booststrap
@@ -360,8 +370,8 @@
                     </div>
                 </article>
 
-                <article class="exp is-10">
-                    <aside class=" is-2">06/2019</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">06/2019</aside>
 
                     <div class="column expdetail is-9 is-offset-1">
 
@@ -382,15 +392,17 @@
 
 
 
-                <article class="exp is-10">
-                    <aside class=" is-2">02/2016-04/2016</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">02/2016-04/2016</aside>
 
                     <div class="column expdetail is-9 is-offset-1">
 
                         <header class="column">Développeur web</header>
                         <div class="is-2">
                             Association Frédéric Levavasseur, à Saint Denis<br>
-                            Mission : Création d'un site web pour la gestion des courriers entrants et sortants
+                            <ul style="margin-top:0">
+                            <li>Création d’un Site WEB pour la gestion des courriers entrants et sortants avec le logiciel WEBDEV</li>
+                            </ul>
                             <br>
                             Langages utilisés : SQL, pseudo-code<br>
                             Logiciel utilisé : webdev
@@ -399,21 +411,22 @@
                 </article>
 
 
-                <article class="exp  is-10">
-                    <aside class=" is-2">07/2013-02/2014</aside>
+                <article class="exp cell  is-10">
+                    <aside class="column is-2">07/2013-02/2014</aside>
                     <div class="column expdetail is-9 is-offset-1">
                         <header class="column">Administrateur web</header>
                         <div class="is-2">
                             Carif Oref à Saint denis<br>
-                            Mission : refonte du site <br>
+                            <ul style="margin-top:0">
+                          <li>Refonte du site pour améliorer la navigation et l’attrait visuel.</li>
                             Langages utilisés : HTML, PHP, CSS, Javascript
-
+                            </ul>
                         </div>
                     </div>
                 </article>
 
-                <article class="exp is-10">
-                    <aside class=" is-2">07/2012-10/2012</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">07/2012-10/2012</aside>
                     <div class="column expdetail is-9 is-offset-1">
                         <header class="column">Technicien de maintenance informatique</header>
                         <div class="is-2 is-offset-2">
@@ -439,21 +452,23 @@
                         </div>
                     </div>
                 </article>
-                <article class="exp is-10">
-                    <aside class=" is-2">07/2011-10/2011</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3>">07/2011-10/2011</aside>
                     <div class="column expdetail is-9 is-offset-1">
                         <header class="column">Développeur web</header>
                         <div class="is-2 is-offset-2">
                             Immo Pei, à Saint Gilles<br>
-                            Mission : refonte du site <br>
+                            <ul style="margin-top:0">
+                                    <li>Refonte du site pour améliorer la navigation et l’attrait visuel.</li>
+                           </ul>
                             Langages utilisés : HTML, PHP, SQL, Ajax
 
                         </div>
                     </div>
                 </article>
 
-                <article class="exp is-10">
-                    <aside class=" is-2">07/2010-09/2010</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">07/2010-09/2010</aside>
                     <div class="column expdetail is-9 is-offset-1">
                         <header class="column">Technicien de maintenance informatique</header>
                         <div class="is-2 is-offset-2">
@@ -482,8 +497,8 @@
                     </div>
                 </article>
 
-                <article class="exp is-10">
-                    <aside class="is-2">07/2009-10/2009</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">07/2009-10/2009</aside>
                     <div class="column expdetail is-9 is-offset-1">
                         <header class="column">Technicien de maintenance informatique</header>
                         <div class="is-2">
@@ -508,8 +523,8 @@
                     </div>
                 </article>
 
-                <article class="exp is-10">
-                    <aside class=" is-2">07/2008-09/2008</aside>
+                <article class="exp cell is-10">
+                    <aside class="column is-3">07/2008-09/2008</aside>
                     <div class="column expdetail is-9 is-offset-1">
                         <header class="column">Technicien de maintenance informatique</header>
                         <div class="is-2 ">
@@ -530,13 +545,13 @@
                         </div>
                     </div>
                 </article>
-            </section>
+            </div>
         </div>
     </div>
 
     <div id="portfolio">
         <h2 class="titre is-offset-8">Portfolio</h2>
-        <div id="exemples" style="background-color: rgba(250,99,87,0.30);width:100%;">
+        <div id="exemples" style="width:100%;">
 
 
             <div class="column is-3">
@@ -817,7 +832,8 @@
     </div>
     </div>
 
-
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <!--div id="contact" id="contact">
         <form method="POST">
             <label for="nom">Nom</label><input type="text" id="nom" title="nom" aria-label="Nom"
@@ -832,6 +848,47 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://kit.fontawesome.com/e2a4bb1024.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>   
+
+    <script >
+        
+// UPDATE: I was able to get this working again... Enjoy!
+
+var cursor = document.querySelector('.cursor');
+var cursorinner = document.querySelector('.cursor2');
+var a = document.querySelectorAll('a');
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + 'px';
+  cursorinner.style.top = y + 'px';
+});
+
+document.addEventListener('mousedown', function(){
+  cursor.classList.add('click');
+  cursorinner.classList.add('cursorinnerhover')
+});
+
+document.addEventListener('mouseup', function(){
+  cursor.classList.remove('click')
+  cursorinner.classList.remove('cursorinnerhover')
+});
+
+a.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
+})
+    </script>
 </body>
 
 </html>

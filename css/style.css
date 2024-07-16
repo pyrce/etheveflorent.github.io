@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300&display=swap');
-
+*::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .logo {
     margin-left: 0px;
     border-radius: 50%;
@@ -11,7 +15,30 @@
     font-size: 8rem;
 
 }
-
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
 a{
     color:blue;
     position: relative;
@@ -32,14 +59,13 @@ a::after{
     transition: transform 250ms ease-in;
     transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
-a:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: left;
-            transform-origin: left;
+a:hover:after{
+    width: 100%;
+    left: 0%;
+    background: black;
   }
 #banner{
-    background-color: #4BAD98;
+    background-color: #515C5C;
 }
 #banner ul{
     font-family: "Oswald";
@@ -134,14 +160,16 @@ margin-right: 50px;
     margin-top: 0px;
     font-family: "Montserrat";
 
-    background-color: #4BAD98;
+    background-color: #515C5C;
 }
 
 .nom {
-   text-align: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
     font-size: 3em;
     color:#DFC4B2;
- 
+text-align: center;
 }
 
 .content {
@@ -162,14 +190,13 @@ textarea {
 }
 
 .header {
-  /*  background-color: coral;*/
+
   background-image: url("../img/bike2.jpg");
   height: 420px;
-    width: 45%;
+  margin: 40px auto;
   background-repeat: no-repeat;
-margin-left: 24%;
-
-
+  
+width: 30%;
 }
 #contact {
     display: flex;
@@ -202,12 +229,11 @@ section:nth-of-type(odd){
 background-color:#AD7A23;
 border-radius: 10px;
 color:white;
-width: 15%;
+padding:10px;
 text-align: center;
 font-size: 18px;
 height: 50px;
 
-line-height: 50px;
     }
     .exp{
         display: flex;
@@ -215,7 +241,10 @@ line-height: 50px;
         padding-bottom: 10px;
         align-content: center;
         justify-content: space-between;
-        border-top: solid 1px black;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #ded2d2, #fff9f9);
+        box-shadow:  20px 20px 60px #d2c6c6,
+                     -20px -20px 60px #ffffff;
      
     }
 header, .content span{
@@ -236,18 +265,19 @@ header, .content span{
         float: right;
         font-family: "Oswald";
         border-radius: 10px;
-        background-color: white;    
+ 
     }
 .exp aside{
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 #exemples{
-    width: 90%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    background-color: rgba(94,250,216);
 }
 #exemples span{
     color:black;
